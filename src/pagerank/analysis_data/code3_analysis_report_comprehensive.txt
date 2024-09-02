@@ -1,0 +1,2440 @@
+Detailed Analysis Implementation in PySpark:
+
+1. Overall Structure and Stage Breakdown:
+The execution is broken up into 464 stages across multiple jobs.
+- Total stages created: 464
+- Stages actually executed: 69
+- Stages skipped: 395
+
+2. DAG Analysis:
+
+Stage 463:
+- Name: collectAsMap at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:130
+- Status: COMPLETE
+- Number of Tasks: 63
+  - Duration: 387.00 ms
+
+Stage 462:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 63
+
+Stage 461:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 60
+
+Stage 460:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 60
+
+Stage 459:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 57
+
+Stage 458:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 457:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 456:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 51
+
+Stage 455:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 454:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 453:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 452:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 451:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 450:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 449:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 448:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 447:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 446:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 445:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 444:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 443:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 442:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 441:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 440:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 439:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 438:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 437:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 436:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 435:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 434:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 433:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 432:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 431:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 430:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 429:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 428:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 120
+  - Duration: 736.00 ms
+
+Stage 427:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 120
+  - Duration: 1468.00 ms
+
+Stage 426:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 63
+  - Duration: 741.00 ms
+
+Stage 425:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 60
+  - Duration: 427.00 ms
+
+Stage 424:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 60
+
+Stage 423:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 57
+
+Stage 422:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 421:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 420:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 51
+
+Stage 419:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 418:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 417:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 416:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 415:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 414:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 413:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 412:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 411:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 410:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 409:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 408:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 407:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 406:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 405:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 404:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 403:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 402:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 401:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 400:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 399:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 398:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 397:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 396:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 395:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 394:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 393:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 392:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 60
+  - Duration: 388.00 ms
+
+Stage 391:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 60
+  - Duration: 735.00 ms
+
+Stage 390:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 57
+
+Stage 389:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 388:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 387:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 51
+
+Stage 386:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 385:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 384:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 383:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 382:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 381:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 380:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 379:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 378:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 377:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 376:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 375:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 374:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 373:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 372:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 371:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 370:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 369:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 368:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 367:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 366:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 365:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 364:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 363:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 362:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 361:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 360:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 359:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 108
+  - Duration: 655.00 ms
+
+Stage 358:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 108
+  - Duration: 1289.00 ms
+
+Stage 357:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 57
+  - Duration: 685.00 ms
+
+Stage 356:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 54
+  - Duration: 408.00 ms
+
+Stage 355:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 54
+
+Stage 354:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 51
+
+Stage 353:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 352:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 351:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 350:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 349:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 348:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 347:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 346:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 345:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 344:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 343:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 342:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 341:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 340:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 339:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 338:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 337:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 336:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 335:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 334:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 333:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 332:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 331:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 330:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 329:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 328:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 327:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 326:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 54
+  - Duration: 343.00 ms
+
+Stage 325:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 54
+  - Duration: 646.00 ms
+
+Stage 324:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 51
+
+Stage 323:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 322:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 321:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 320:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 319:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 318:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 317:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 316:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 315:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 314:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 313:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 312:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 311:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 310:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 309:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 308:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 307:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 306:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 305:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 304:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 303:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 302:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 301:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 300:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 299:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 298:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 297:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 296:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 96
+  - Duration: 605.00 ms
+
+Stage 295:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 96
+  - Duration: 1146.00 ms
+
+Stage 294:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 51
+  - Duration: 618.00 ms
+
+Stage 293:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 48
+  - Duration: 370.00 ms
+
+Stage 292:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 48
+
+Stage 291:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 290:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 289:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 288:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 287:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 286:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 285:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 284:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 283:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 282:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 281:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 280:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 279:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 278:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 277:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 276:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 275:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 274:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 273:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 272:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 271:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 270:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 269:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 268:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 267:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 266:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 48
+  - Duration: 287.00 ms
+
+Stage 265:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 48
+  - Duration: 574.00 ms
+
+Stage 264:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 45
+
+Stage 263:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 262:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 261:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 260:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 259:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 258:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 257:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 256:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 255:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 254:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 253:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 252:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 251:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 250:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 249:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 248:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 247:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 246:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 245:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 244:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 243:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 242:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 241:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 240:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 239:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 84
+  - Duration: 519.00 ms
+
+Stage 238:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 84
+  - Duration: 1029.00 ms
+
+Stage 237:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 45
+  - Duration: 551.00 ms
+
+Stage 236:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 42
+  - Duration: 302.00 ms
+
+Stage 235:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 42
+
+Stage 234:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 233:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 232:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 231:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 230:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 229:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 228:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 227:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 226:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 225:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 224:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 223:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 222:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 221:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 220:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 219:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 218:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 217:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 216:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 215:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 214:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 213:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 212:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 42
+  - Duration: 253.00 ms
+
+Stage 211:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 42
+  - Duration: 546.00 ms
+
+Stage 210:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 39
+
+Stage 209:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 208:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 207:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 206:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 205:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 204:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 203:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 202:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 201:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 200:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 199:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 198:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 197:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 196:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 195:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 194:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 193:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 192:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 191:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 190:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 189:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 188:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 72
+  - Duration: 421.00 ms
+
+Stage 187:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 72
+  - Duration: 890.00 ms
+
+Stage 186:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 39
+  - Duration: 474.00 ms
+
+Stage 185:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 36
+  - Duration: 297.00 ms
+
+Stage 184:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 36
+
+Stage 183:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 182:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 181:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 180:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 179:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 178:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 177:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 176:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 175:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 174:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 173:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 172:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 171:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 170:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 169:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 168:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 167:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 166:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 165:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 164:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 36
+  - Duration: 223.00 ms
+
+Stage 163:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 36
+  - Duration: 423.00 ms
+
+Stage 162:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 33
+
+Stage 161:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 160:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 159:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 158:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 157:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 156:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 155:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 154:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 153:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 152:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 151:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 150:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 149:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 148:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 147:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 146:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 145:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 144:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 143:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 60
+  - Duration: 356.00 ms
+
+Stage 142:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 60
+  - Duration: 736.00 ms
+
+Stage 141:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 33
+  - Duration: 410.00 ms
+
+Stage 140:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 30
+  - Duration: 233.00 ms
+
+Stage 139:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 30
+
+Stage 138:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 137:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 136:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 135:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 134:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 133:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 132:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 131:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 130:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 129:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 128:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 127:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 126:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 125:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 124:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 123:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 122:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 30
+  - Duration: 187.00 ms
+
+Stage 121:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 30
+  - Duration: 394.00 ms
+
+Stage 120:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 27
+
+Stage 119:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 118:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 117:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 116:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 115:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 114:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 113:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 112:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 111:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 110:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 109:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 108:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 107:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 106:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 105:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 104:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 48
+  - Duration: 292.00 ms
+
+Stage 103:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 48
+  - Duration: 603.00 ms
+
+Stage 102:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 27
+  - Duration: 353.00 ms
+
+Stage 101:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 24
+  - Duration: 219.00 ms
+
+Stage 100:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 24
+
+Stage 99:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 98:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 97:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 96:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 95:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 94:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 93:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 92:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 91:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 90:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 89:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 88:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 87:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 86:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 24
+  - Duration: 156.00 ms
+
+Stage 85:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 24
+  - Duration: 310.00 ms
+
+Stage 84:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 21
+
+Stage 83:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 82:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 81:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 80:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 79:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 78:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 77:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 76:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 75:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 74:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 73:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 72:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 71:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 36
+  - Duration: 241.00 ms
+
+Stage 70:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 36
+  - Duration: 488.00 ms
+
+Stage 69:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 21
+  - Duration: 278.00 ms
+
+Stage 68:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 18
+  - Duration: 167.00 ms
+
+Stage 67:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 18
+
+Stage 66:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 65:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 64:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 63:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 62:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 61:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 60:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 59:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 58:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 57:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 56:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 18
+  - Duration: 116.00 ms
+
+Stage 55:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 18
+  - Duration: 232.00 ms
+
+Stage 54:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 15
+
+Stage 53:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 52:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 51:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 50:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 49:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 48:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 47:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 46:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 45:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 44:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 24
+  - Duration: 163.00 ms
+
+Stage 43:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 24
+  - Duration: 339.00 ms
+
+Stage 42:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 15
+  - Duration: 204.00 ms
+
+Stage 41:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 12
+  - Duration: 133.00 ms
+
+Stage 40:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 12
+
+Stage 39:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 38:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 37:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 36:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 35:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 34:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 33:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 32:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 12
+  - Duration: 94.00 ms
+
+Stage 31:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 12
+  - Duration: 168.00 ms
+
+Stage 30:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: SKIPPED
+- Number of Tasks: 9
+
+Stage 29:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 28:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: SKIPPED
+- Number of Tasks: 3
+
+Stage 27:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 26:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 25:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 24:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 23:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 12
+  - Duration: 105.00 ms
+
+Stage 22:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:106
+- Status: COMPLETE
+- Number of Tasks: 12
+  - Duration: 186.00 ms
+
+Stage 21:
+- Name: leftOuterJoin at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:101
+- Status: COMPLETE
+- Number of Tasks: 9
+  - Duration: 163.00 ms
+
+Stage 20:
+- Name: reduceByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:100
+- Status: COMPLETE
+- Number of Tasks: 6
+  - Duration: 106.00 ms
+
+Stage 19:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:82
+- Status: COMPLETE
+- Number of Tasks: 3
+  - Duration: 59.00 ms
+
+Stage 18:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: SKIPPED
+- Number of Tasks: 6
+
+Stage 17:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 16:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 15:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 14:
+- Name: sum at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:96
+- Status: COMPLETE
+- Number of Tasks: 6
+  - Duration: 59.00 ms
+
+Stage 13:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:91
+- Status: COMPLETE
+- Number of Tasks: 6
+  - Duration: 112.00 ms
+
+Stage 12:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 11:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 10:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 9:
+- Name: runJob at PythonRDD.scala:181
+- Status: COMPLETE
+- Number of Tasks: 1
+  - Duration: 41.00 ms
+
+Stage 8:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 7:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 6:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: SKIPPED
+- Number of Tasks: 1
+
+Stage 5:
+- Name: count at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:61
+- Status: COMPLETE
+- Number of Tasks: 3
+  - Duration: 80.00 ms
+
+Stage 4:
+- Name: subtractByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:57
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 63.00 ms
+
+Stage 3:
+- Name: distinct at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:56
+- Status: COMPLETE
+- Number of Tasks: 1
+  - Duration: 62.00 ms
+
+Stage 2:
+- Name: partitionBy at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:53
+- Status: COMPLETE
+- Number of Tasks: 1
+  - Duration: 134.00 ms
+
+Stage 1:
+- Name: runJob at PythonRDD.scala:181
+- Status: COMPLETE
+- Number of Tasks: 1
+  - Duration: 42.00 ms
+
+Stage 0:
+- Name: count at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/pagerank.py:46
+- Status: COMPLETE
+- Number of Tasks: 1
+  - Duration: 472.00 ms
+
+3. Performance and Data Efficiency Analysis:
+- Total duration: 26992.00 ms
+- Total shuffle read: 1006608 bytes
+- Total shuffle write: 688630 bytes
+- Total executor run time: 236645 ms
+- Total executor CPU time: 14899047000 ns
+- Total executor deserialize time: 573 ms
+- Total result serialization time: 356 ms
+- Total fetch wait time: 0 ms
+- Total peak execution memory: 56502 bytes
+- Total bytes read: 0 bytes
+- Total bytes written: 0 bytes
+- Total records read: 0
+- Total records written: 0
+- Total shuffle read time: 0 ms
+- Total shuffle write time: 4308256487 ms
+- Total shuffle records read: 0
+- Total shuffle records written: 0
+- Total remote blocks fetched: 0
+- Total local blocks fetched: 0
+- Total JVM heap used: 0 bytes
+- Total JVM off-heap used: 0 bytes
+
+
+
+
+7. Memory Usage:
+- Total memory used: 56502 bytes
+- Total disk used: 0 bytes
+
+8. Garbage Collection:
+- Total GC time: 786 ms
+
+
+10. Job Metrics:
+- Total jobs: 25
+- Total job duration: 27027.00 ms
+- Total failed tasks: 0
+- Total speculative tasks: 0
+- Total errors: 0
+

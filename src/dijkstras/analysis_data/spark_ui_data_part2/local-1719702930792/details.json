@@ -1,0 +1,18 @@
+{
+    "id": "local-1719702930792",
+    "name": "SSSPMR",
+    "attempts": [
+        {
+            "startTime": "2024-06-29T23:15:30.465GMT",
+            "endTime": "1969-12-31T23:59:59.999GMT",
+            "lastUpdated": "2024-06-29T23:15:30.465GMT",
+            "duration": 30097,
+            "sparkUser": "kritikkumar",
+            "completed": false,
+            "appSparkVersion": "3.5.1",
+            "startTimeEpoch": 1719702930465,
+            "endTimeEpoch": -1,
+            "lastUpdatedEpoch": 1719702930465
+        }
+    ]
+}

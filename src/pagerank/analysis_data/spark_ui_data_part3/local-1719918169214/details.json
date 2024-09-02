@@ -1,0 +1,18 @@
+{
+    "id": "local-1719918169214",
+    "name": "PRAlgorithm",
+    "attempts": [
+        {
+            "startTime": "2024-07-02T11:02:48.886GMT",
+            "endTime": "1969-12-31T23:59:59.999GMT",
+            "lastUpdated": "2024-07-02T11:02:48.886GMT",
+            "duration": 1143373,
+            "sparkUser": "kritikkumar",
+            "completed": false,
+            "appSparkVersion": "3.5.1",
+            "startTimeEpoch": 1719918168886,
+            "endTimeEpoch": -1,
+            "lastUpdatedEpoch": 1719918168886
+        }
+    ]
+}

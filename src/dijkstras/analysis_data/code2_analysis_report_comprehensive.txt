@@ -1,0 +1,190 @@
+Detailed Analysis Implementation in PySpark:
+
+1. Overall Structure and Stage Breakdown:
+The execution is broken up into 27 stages across multiple jobs.
+- Total stages created: 27
+- Stages actually executed: 14
+- Stages skipped: 13
+
+2. DAG Analysis:
+
+Stage 26:
+- Name: collect at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:103
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 40.00 ms
+
+Stage 25:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 24:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 23:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 22:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:27
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 21:
+- Name: reduce at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 43.00 ms
+
+Stage 20:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 69.00 ms
+
+Stage 19:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 45.00 ms
+
+Stage 18:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 17:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 16:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 15:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:27
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 14:
+- Name: reduce at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 47.00 ms
+
+Stage 13:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 92.00 ms
+
+Stage 12:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 55.00 ms
+
+Stage 11:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 10:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 9:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:27
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 8:
+- Name: reduce at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 49.00 ms
+
+Stage 7:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 68.00 ms
+
+Stage 6:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 48.00 ms
+
+Stage 5:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 4:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:27
+- Status: SKIPPED
+- Number of Tasks: 2
+
+Stage 3:
+- Name: reduce at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 51.00 ms
+
+Stage 2:
+- Name: join at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:81
+- Status: COMPLETE
+- Number of Tasks: 4
+  - Duration: 92.00 ms
+
+Stage 1:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:74
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 71.00 ms
+
+Stage 0:
+- Name: groupByKey at /Users/kritikkumar/Documents/DIC_summer_2024/shaivipa_kritikku_assignment_3/src/dijkstra_spark.py:27
+- Status: COMPLETE
+- Number of Tasks: 2
+  - Duration: 615.00 ms
+
+3. Performance and Data Efficiency Analysis:
+- Total duration: 1385.00 ms
+- Total shuffle read: 66069 bytes
+- Total shuffle write: 47574 bytes
+- Total executor run time: 3158 ms
+- Total executor CPU time: 447895000 ns
+- Total executor deserialize time: 86 ms
+- Total result serialization time: 5 ms
+- Total peak execution memory: 60864 bytes
+
+
+
+
+
+
+
+7. Memory Usage:
+- Total memory used: 60864 bytes
+- Total disk used: 0 bytes
+
+8. Garbage Collection:
+- Total GC time: 35 ms
+
+
+
+10. Job Metrics:
+- Total jobs: 5
+- Total job duration: 1408.00 ms
+- Total failed tasks: 0
+- Total speculative tasks: 0
+- Total errors: 0

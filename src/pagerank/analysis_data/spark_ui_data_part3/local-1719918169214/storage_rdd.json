@@ -1,0 +1,134 @@
+[
+    {
+        "id": 10,
+        "name": "MapPartitionsRDD",
+        "numPartitions": 1,
+        "numCachedPartitions": 1,
+        "storageLevel": "Disk Memory Serialized 1x Replicated",
+        "memoryUsed": 1762,
+        "diskUsed": 0,
+        "dataDistribution": [
+            {
+                "address": "172.20.16.168:54856",
+                "memoryUsed": 1762,
+                "memoryRemaining": 455430047,
+                "diskUsed": 0,
+                "onHeapMemoryUsed": 1762,
+                "offHeapMemoryUsed": 0,
+                "onHeapMemoryRemaining": 455430047,
+                "offHeapMemoryRemaining": 0
+            }
+        ],
+        "partitions": [
+            {
+                "blockName": "rdd_10_0",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 1762,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "UnionRDD",
+        "numPartitions": 3,
+        "numCachedPartitions": 3,
+        "storageLevel": "Disk Memory Serialized 1x Replicated",
+        "memoryUsed": 1829,
+        "diskUsed": 0,
+        "dataDistribution": [
+            {
+                "address": "172.20.16.168:54856",
+                "memoryUsed": 1829,
+                "memoryRemaining": 455430047,
+                "diskUsed": 0,
+                "onHeapMemoryUsed": 1829,
+                "offHeapMemoryUsed": 0,
+                "onHeapMemoryRemaining": 455430047,
+                "offHeapMemoryRemaining": 0
+            }
+        ],
+        "partitions": [
+            {
+                "blockName": "rdd_24_0",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 1787,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            },
+            {
+                "blockName": "rdd_24_2",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 21,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            },
+            {
+                "blockName": "rdd_24_1",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 21,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "name": "PythonRDD",
+        "numPartitions": 3,
+        "numCachedPartitions": 3,
+        "storageLevel": "Disk Memory Serialized 1x Replicated",
+        "memoryUsed": 544,
+        "diskUsed": 0,
+        "dataDistribution": [
+            {
+                "address": "172.20.16.168:54856",
+                "memoryUsed": 544,
+                "memoryRemaining": 455430047,
+                "diskUsed": 0,
+                "onHeapMemoryUsed": 544,
+                "offHeapMemoryUsed": 0,
+                "onHeapMemoryRemaining": 455430047,
+                "offHeapMemoryRemaining": 0
+            }
+        ],
+        "partitions": [
+            {
+                "blockName": "rdd_31_1",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 179,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            },
+            {
+                "blockName": "rdd_31_0",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 186,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            },
+            {
+                "blockName": "rdd_31_2",
+                "storageLevel": "Memory Serialized 1x Replicated",
+                "memoryUsed": 179,
+                "diskUsed": 0,
+                "executors": [
+                    "driver"
+                ]
+            }
+        ]
+    }
+]
